@@ -1,0 +1,16 @@
+{
+  "name": "tiy-gradebook",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "3.3.4",
+    "modernizr": "~2.8.1",
+    "normalize": "~1.0.4",
+    "lodash": "~3.9.3",
+    "vue": "~0.12.1",
+    "angular": "~1.4.1"
+  },
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "mocha": "~2.2.5"
+  }
+}
