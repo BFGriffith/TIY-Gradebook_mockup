@@ -19,29 +19,33 @@
     <!-- endbuild -->
   </head>
   <body>
-    <main class="container">
+    <nav>
+      <a href="#" ng-click="app.page('repositories')">Go To Repositories</a>
+      <a href="#" ng-click="app.page('milestones')">Go to Milestones</a>
+    </nav>
+    <main class="container-fluid" ng-include="app.view">
        <h2>TIY Orlando Gradebook</h2>
        <h3>Available Classes</h3>
        <div class="list-group">
          <a href="{{milestones.html}}" class="list-group-item">
            <strong>{{repos.name}}</strong><br>
-           <span>Instructor: {{user}}</span>
+           <author>Instructor: {{}}</author>
          </a>
          <a href="{{milestones.html}}" class="list-group-item">
            <strong>{{repos.name}}</strong><br>
-           <span>Instructor: Brian Gates</span>
+           <author>Instructor: Brian Gates</author>
          </a>
          <a href="{{milestones.html}}" class="list-group-item">
            <big><strong>{{repos.name}}</strong></big><br>
-           <span>Instructor: {{user}}</span>
+           <author>Instructor: {{user.name}}</author>
          </a>
          <a href="{{milestones.html}}" class="list-group-item">
            <strong>{{repos.name}}</strong><br>
-           <span>Instructor: {{user}}</span>
+           <author>Instructor: {{user.name}}</author>
          </a>
          <a href="milestones.html" class="list-group-item">
            <strong>{{repos.name}}</strong><br>
-           <span>Instructor: {{user}}</span>
+           <author>Instructor: {{user.name}}</author>
          </a>
        </main>
 
